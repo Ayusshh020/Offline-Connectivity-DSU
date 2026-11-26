@@ -25,7 +25,7 @@ Standard Union-Find (DSU) can **add** edges blazingly fast, but it **cannot dele
 
 ## 💡 Worked Example
 
-Consider a small triangle with an extra parallel edge:
+Consider a small path graph with a parallel edge:
 
 ```
 Graph: 3 vertices, edges = [(0,1), (0,1), (1,2)]
@@ -66,7 +66,7 @@ flowchart LR
 | **Time Complexity** | O((M + K) · α(N)) ≈ linear | O(K · (N + M)) — quadratic when K ≈ M |
 | **Space** | O(N + M) — flat arrays | O(N + M) — nested hash maps + queues |
 | **Processing** | Offline (needs all removals upfront) | Online (step-by-step) |
-| **Best when** | K is large, graph is dense | Queries are localized, graph is tiny |
+| **Best when** | K is large, graph is dense | Graph is tiny, or as a validation reference |
 | **Observed speedup** | — | **Up to 358×** slower than DSU |
 
 ---
@@ -235,9 +235,7 @@ Inputs are JSON files with 0-based vertex indexing. Parallel edges are allowed:
 
 ## 👤 Authors
 
-| Name | Role |
-|:---|:---|
-| *Your Name Here* | Developer & Investigator |
+| Team Linkedlist ]
 
 ---
 
